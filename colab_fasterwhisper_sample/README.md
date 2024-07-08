@@ -1,4 +1,4 @@
-# colab_WhisperAPI_sample
+# colab_faster-whisper_sample
 
 ここでは音声認識AIであるfaster-whisperに関して、
 Google Colabにて簡単に利用できるようにしたリポジトリです　
