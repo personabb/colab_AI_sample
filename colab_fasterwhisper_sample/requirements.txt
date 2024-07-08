@@ -1,0 +1,5 @@
+sounddevice
+faster_whisper
+torch
+torchvision
+torchaudio
