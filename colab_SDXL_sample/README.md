@@ -1,7 +1,7 @@
-# colab_SBV2_sample
+# colab_SDXL_sample
 
-ここでは合成音声AIであるStyle-Bert-VITS2に関して、Google Colabにて簡単に利用できるようにしたリポジトリです　
+ここでは画像生成AIであるStable Diffusion XL(Diffuser)に関して、Google Colabにて簡単に利用できるようにしたリポジトリです　
 
 使い方などの詳細は下記の記事をご覧ください。
 
-https://zenn.dev/asap/articles/7bdb20dcb5cc56
+
