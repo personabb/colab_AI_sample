@@ -172,3 +172,5 @@ arxiv/
 env*/
 *.pt
 *.ckpt
+.DS_Store
+*/.DS_Store
