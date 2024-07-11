@@ -4,3 +4,6 @@
 Google Colabにて簡単に利用できるようにしたリポジトリです　
 
 使い方などの詳細は下記の記事をご覧ください。
+
+https://zenn.dev/asap/articles/ecaa5631e42195
+
