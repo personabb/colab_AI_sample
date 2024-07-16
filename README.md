@@ -23,4 +23,13 @@ https://zenn.dev/asap/articles/8c3d5164d14f6e
 
 https://zenn.dev/asap/articles/ecaa5631e42195
 
+生成AIをGoogle Colaboratoryで簡単に  【Part5 音声認識AI faster-whisper編】
+
+https://zenn.dev/asap/articles/ba8fcb1880165e
+
+生成AIをローカルで簡単に  【Part5.5 faster-whisper+マイク録音編】
+
+https://zenn.dev/asap/articles/2c0d421e68ef16
+
+
 
