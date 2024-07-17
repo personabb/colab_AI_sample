@@ -174,3 +174,7 @@ env*/
 *.ckpt
 .DS_Store
 */.DS_Store
+*.webp
+*.pmg
+*.jpeg
+*.docx
