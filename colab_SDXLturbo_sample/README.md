@@ -4,4 +4,6 @@
 
 使い方などの詳細は下記の記事をご覧ください。
 
+生成AIをGoogle Colaboratoryで簡単に 【Part7 画像生成AI SDXL Turbo編】
 
+https://zenn.dev/asap/articles/ed58a6899c1c26
