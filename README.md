@@ -35,5 +35,9 @@ https://zenn.dev/asap/articles/2c0d421e68ef16
 
 https://zenn.dev/asap/articles/e4791be54f90ce
 
+生成AIをGoogle Colaboratoryで簡単に 【Part7 画像生成AI SDXL Turbo編】
+
+https://zenn.dev/asap/articles/ed58a6899c1c26
+
 
 
