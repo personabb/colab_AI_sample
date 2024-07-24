@@ -175,6 +175,6 @@ env*/
 .DS_Store
 */.DS_Store
 *.webp
-*.pmg
+*.png
 *.jpeg
 *.docx
