@@ -39,5 +39,9 @@ https://zenn.dev/asap/articles/e4791be54f90ce
 
 https://zenn.dev/asap/articles/ed58a6899c1c26
 
+生成AIをGoogle Colaboratoryで簡単に 【Part8 画像生成AI Stable Diffusion 3 Medium編】
+
+https://zenn.dev/asap/articles/6f6ca9aa0513d8
+
 
 
