@@ -1,4 +1,4 @@
-from diffusers import DiffusionPipeline, AutoencoderKL, StableDiffusionXLControlNetPipeline, ControlNetModel
+from diffusers import DiffusionPipeline, AutoencoderKL, StableDiffusionXLControlNetPipeline, ControlNetModel, StableDiffusionXLPipeline
 from diffusers.utils import load_image
 from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
 import torch
@@ -66,6 +66,13 @@ class SDXLC:
         if self.vae_model_path == "None":
             self.vae_model_path = None
             self.VAE_FLAG = False
+            
+        self.from_single_file = config_dict.get("from_single_file", "None")
+        self.SINGLE_FILE_FLAG = True
+        if self.from_single_file == "None":
+            self.from_single_file = None
+            self.SINGLE_FILE_FLAG = False
+            
 
         self.base_model_path = config_dict["base_model_path"]
 
@@ -142,15 +149,23 @@ class SDXLC:
             vae = AutoencoderKL.from_pretrained(
                 self.vae_model_path,
                 torch_dtype=torch.float16)
-
-            base = StableDiffusionXLControlNetPipeline.from_pretrained(
-                self.base_model_path,
-                controlnet=controlnet,
-                vae=vae,
-                torch_dtype=torch.float16,
-                variant="fp16",
-                use_safetensors=True
-            )
+            
+            if not self.SINGLE_FILE_FLAG:
+                base = StableDiffusionXLControlNetPipeline.from_pretrained(
+                    self.base_model_path,
+                    controlnet=controlnet,
+                    vae=vae,
+                    torch_dtype=torch.float16,
+                    variant="fp16",
+                    use_safetensors=True
+                )
+            else:
+                pipe = StableDiffusionXLPipeline.from_single_file(
+                    self.base_model_path,
+                    extract_ema=True,
+                    torch_dtype=torch.float16 
+                    )
+                base = StableDiffusionXLControlNetPipeline(controlnet = controlnet, **pipe.components)
             base.to(self.device)
 
             if self.REFINER_FLAG:
@@ -169,13 +184,21 @@ class SDXLC:
                 refiner = None
 
         else:
-            base = StableDiffusionXLControlNetPipeline.from_pretrained(
-                self.base_model_path,
-                controlnet=controlnet,
-                torch_dtype=torch.float16,
-                variant="fp16",
-                use_safetensors=True
-            )
+            if not self.SINGLE_FILE_FLAG:
+                base = StableDiffusionXLControlNetPipeline.from_pretrained(
+                    self.base_model_path,
+                    controlnet=controlnet,
+                    torch_dtype=torch.float16,
+                    variant="fp16",
+                    use_safetensors=True
+                )
+            else:
+                pipe = StableDiffusionXLPipeline.from_single_file(
+                    self.base_model_path,
+                    extract_ema=True,
+                    torch_dtype=torch.float16 
+                    )
+                base = StableDiffusionXLControlNetPipeline(controlnet = controlnet, **pipe.components)
             base.to(self.device, torch.float16)
 
             if self.REFINER_FLAG:
