@@ -43,5 +43,8 @@ https://zenn.dev/asap/articles/ed58a6899c1c26
 
 https://zenn.dev/asap/articles/6f6ca9aa0513d8
 
+生成AIをGoogle Colabで簡単に 【Part10 SDXL+ANIMAGINE +ControlNet+LoRA編（全部載せ）】
+
+https://zenn.dev/asap/articles/aa856819e2a722
 
 
