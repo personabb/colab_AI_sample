@@ -4,3 +4,6 @@
 
 使い方などの詳細は下記の記事をご覧ください。
 
+GPT-soVITS ver2をモジュールとして動かす
+
+https://zenn.dev/asap/articles/964a7d863d8896
