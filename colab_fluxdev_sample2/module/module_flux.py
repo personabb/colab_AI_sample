@@ -348,8 +348,9 @@ class FLUX:
 
         #重みのサイズが大きい順に量子化して、RAMの最大使用量を減らす
         if self.use_controlnet:
-            controlnet = FluxControlNetModel.from_pretrained(self.controlnet_path, torch_dtype=torch.float16)
-            controlnet = FluxMultiControlNetModel([controlnet])
+            controlnet_simple = FluxControlNetModel.from_pretrained(self.controlnet_path, torch_dtype=torch.float16)
+            controlnet = FluxMultiControlNetModel([controlnet_simple])
+            controlnet.config = controlnet_simple.config
             print("controlnet quantizing")
             quantize(controlnet, weights=qfloat8)
             freeze(controlnet)
@@ -522,8 +523,9 @@ class FLUX:
 
 
         if self.use_controlnet:
-            controlnet = FluxControlNetModel.from_pretrained(self.controlnet_path, torch_dtype=torch.float16)
-            controlnet = FluxMultiControlNetModel([controlnet])
+            controlnet_simple = FluxControlNetModel.from_pretrained(self.controlnet_path, torch_dtype=torch.float16)
+            controlnet = FluxMultiControlNetModel([controlnet_simple])
+            controlnet.config = controlnet_simple.config
             print("loaded controlnet")
             base = FluxControlNetPipeline(controlnet = controlnet, **base.components)
 
