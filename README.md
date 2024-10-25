@@ -36,6 +36,9 @@ Google Colabにて簡単に利用できるようにしたリポジトリです�
 
 [ComfyUI-AdvancedLivePortraitを使ってみる（No WebUI）（Google Colab）](https://zenn.dev/asap/articles/c0a1b82a10f0e2)
 
+[FLUX.1-devでControlNetを利用したら画像の質が下がったのでImg2Imgを使って改善してみた【Diffusers】](https://zenn.dev/asap/articles/912d6de879d006)
 
+[超強力汎用ControlNet「AnyTest v4」を利用する方法【diffusers】](https://zenn.dev/asap/articles/c08dffa41bec03)
 
+LangGraphを使ってAIエージェントを実装する方法
 
