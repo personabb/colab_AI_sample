@@ -7,6 +7,6 @@ colab_fluxdev_sampleと比較して、image2imageの機能を追加したもの�
 
 使い方などの詳細は下記の記事をご覧ください。
 
-
+https://zenn.dev/asap/articles/912d6de879d006
 
 

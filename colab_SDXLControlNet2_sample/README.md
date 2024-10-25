@@ -10,4 +10,4 @@ colab_SDXLControlNet_sample
 
 使い方などの詳細は下記の記事をご覧ください。
 
-
+https://zenn.dev/asap/articles/c08dffa41bec03
