@@ -1,0 +1,7 @@
+# colab_LangGraph_sample
+
+LangGraphを使って、少し複雑なAiエージェントを作成するサンプルコードです。
+
+使い方などの詳細は下記の記事をご覧ください。
+
+LangGraphを使ってAIエージェントを実装する方法
