@@ -8,6 +8,6 @@ LangGraphを使って、少し複雑なAiエージェントを作成するサン
 
 colab_LangGraph_sample.ipynbを参照してください
 
-LangGraphにて入力情報が不十分な場合に、ユーザへ追加質問をするAIエージェントを作る方法
+[LangGraphにて入力情報が不十分な場合に、ユーザへ追加質問をするAIエージェントを作る方法](https://zenn.dev/asap/articles/03548f844efe6f)
 
 colab_LangGraph_sample2.ipynbを参照してください。
