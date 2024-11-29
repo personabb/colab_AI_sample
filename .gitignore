@@ -180,3 +180,8 @@ env*/
 *.docx
 *.gif
 *.jpg
+
+Data/
+amitaro/
+amitaro*/
+*.onnx
