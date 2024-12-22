@@ -44,3 +44,5 @@ Google Colabにて簡単に利用できるようにしたリポジトリです�
 
 [LangGraphにて入力情報が不十分な場合に、ユーザへ追加質問をするAIエージェントを作る方法](https://zenn.dev/asap/articles/03548f844efe6f)
 
+[Google ColabでSeed-VCによる声色変換を試す](https://zenn.dev/asap/articles/9c54aef739a6ed)
+
